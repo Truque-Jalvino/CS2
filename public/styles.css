@@ -1,0 +1,23 @@
+:root{--tinta:#13294b;--papel:#f5f7fa;--cinta:#e8a317;--borde:#cfd8e3;--error:#b3261e;--ok:#1f7a4d}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.5 "Segoe UI",system-ui,sans-serif;background:var(--papel);color:var(--tinta)}
+header{background:var(--tinta);color:#fff;padding:1rem 1.25rem;display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:center;border-bottom:6px solid var(--cinta)}
+h1{margin:0;font-size:1.4rem}h2{font-size:1.1rem;margin:1.5rem 0 .75rem}h3{margin:.2rem 0;font-size:1rem}
+.rol{font-size:.85rem;display:flex;flex-direction:column}
+nav{background:#e6ecf4;display:flex;flex-wrap:wrap;padding:0 1rem}
+nav button{background:none;border:0;padding:.7rem 1rem;font:inherit;color:var(--tinta);cursor:pointer;border-bottom:3px solid transparent}
+nav button.on{border-color:var(--cinta);font-weight:600}
+main{max-width:860px;margin:0 auto;padding:1rem 1.25rem 3rem}
+form,.caja{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.9rem;background:#fff;border:1px solid var(--borde);padding:1rem;border-radius:6px;margin-bottom:.75rem}
+label{display:flex;flex-direction:column;font-size:.9rem;gap:.25rem}label.fila{flex-direction:row;align-items:center;gap:.5rem}
+input,select,textarea{font:inherit;padding:.5rem;border:1px solid var(--borde);border-radius:4px;color:var(--tinta);background:#fff}
+button.p,form button{font:inherit;background:var(--cinta);color:var(--tinta);border:0;font-weight:600;padding:.55rem 1rem;border-radius:4px;cursor:pointer;align-self:end}
+:focus-visible{outline:3px solid var(--cinta);outline-offset:2px}
+.msg{grid-column:1/-1;margin:0;font-size:.92rem;white-space:pre-line}.msg.err{color:var(--error)}.msg.ok{color:var(--ok)}
+.ancho{grid-column:1/-1}[hidden]{display:none!important}.nota{font-size:.85rem;opacity:.8}
+ul{list-style:none;padding:0;margin:0}
+li{background:#fff;border:1px solid var(--borde);border-left:5px solid var(--cinta);padding:.7rem 1rem;margin-bottom:.5rem;display:flex;justify-content:space-between;gap:1rem;align-items:center;flex-wrap:wrap}
+li small{display:block;opacity:.8}.acc{display:flex;gap:.75rem;flex-wrap:wrap}
+.tag{background:var(--ok);color:#fff;font-size:.75rem;padding:.1rem .5rem;border-radius:99px}.tag.off{background:#7a8699}
+.link{background:none;border:0;color:var(--tinta);text-decoration:underline;cursor:pointer;font:inherit}.vacio{opacity:.7}
+.checks{display:flex;flex-wrap:wrap;gap:.4rem 1rem}
